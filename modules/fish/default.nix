@@ -11,6 +11,7 @@
       nyaa = "fastanime anilist";
       # System
       neko = "cd ~/.config/nix && sudo darwin-rebuild switch --flake .#kafka";
+      kaze = "cd ~/.config/nix && sudo darwin-rebuild check --flake .#kafka";
       sora = "brew cleanup && sudo nix-collect-garbage && nix-collect-garbage -d";
       kage = "brew upgrade --greedy && cd ~/.config/nix/ && sudo nix flake update";
     };
