@@ -8,7 +8,7 @@
       # Editor
       mako = "hx ~/.config/nix/";
       # Media
-      nyaa = "fastanime anilist";
+      nyaa = "fastanime search -t";
       # System
       neko = "cd ~/.config/nix && sudo darwin-rebuild switch --flake .#kafka";
       kaze = "cd ~/.config/nix && sudo darwin-rebuild check --flake .#kafka";

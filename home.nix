@@ -28,6 +28,7 @@
       pipx
       ruby
       terminal-notifier
+      utm
       vscodium
       zoxide
     ];

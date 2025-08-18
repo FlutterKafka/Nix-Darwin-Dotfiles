@@ -39,7 +39,7 @@
     };
     casks = [
       "anki"
-      "eve-launcher"
+      "discord"
       "ghostty"
       "mullvad-browser"
       "mullvad-vpn@beta"

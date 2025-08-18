@@ -35,6 +35,7 @@
       rcmd - k : open -na 'KeePassXC'
       rcmd - l : open -na 'LibreOffice'
       rcmd - v : open -na 'VSCodium'
+      rcmd - u : open -na 'UTM'
       rcmd - o : ~/rofi-music/rofi-music
     '';
   };
