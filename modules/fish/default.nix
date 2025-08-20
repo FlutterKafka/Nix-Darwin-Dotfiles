@@ -5,7 +5,9 @@
     shellAliases = {
       # Core Utils
       cd = "z";
-      ls = "eza -al --group-directories-first";
+      ls = "eza -la --group-directories-first";
+      gi = "git commit -S -a -m";
+      gp = "git push -u origin";
       # Editor
       mako = "hx ~/.config/nix/";
       # System
