@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   imports = [
     ./modules/fish
+    ./modules/ghostty
     ./modules/helix
-    ./modules/kitty
     ./modules/mpv
     ./modules/skhd
     ./modules/starship
@@ -12,37 +12,17 @@
     username = "kafka";
     homeDirectory = "/Users/kafka";
     stateVersion = "23.11";
-    packages = with pkgs; [
-      cocoapods
-      choose-gui
+    packages = with pkgs; [ keepassxc libreoffice-bin utm
       colima
       docker
       docker-compose
       docker-credential-helpers
-      eza
-      fzf
-      gnupg
-      keepassxc
-      libreoffice-bin
-      openssh
-      pipx
-      ruby
-      terminal-notifier
-      utm
-      vscodium
-      zoxide
     ];
   };
 
-  manual = {
-    html.enable = false;
-    json.enable = false;
-    manpages.enable = false;
-  };
-
+  manual.manpages.enable = false;
   programs = {
     man.enable = false;
     home-manager.enable = true;
-    bash.shellOptions = ["-HISTFILE"];
   };
 }

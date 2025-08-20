@@ -1,4 +1,5 @@
 {pkgs, ...}: {
+  home.packages = with pkgs; [ choose-gui terminal-notifier ];
   programs.mpv = {
     enable = true;
     scripts = with pkgs; [

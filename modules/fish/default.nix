@@ -1,4 +1,5 @@
-{
+{pkgs, ...}: {
+  home.packages = with pkgs; [ eza fzf gnupg zoxide];
   programs.fish = {
     enable = true;
     shellAliases = {
@@ -7,8 +8,6 @@
       ls = "eza -al --group-directories-first";
       # Editor
       mako = "hx ~/.config/nix/";
-      # Media
-      nyaa = "fastanime search -t";
       # System
       neko = "cd ~/.config/nix && sudo darwin-rebuild switch --flake .#kafka";
       kaze = "cd ~/.config/nix && sudo darwin-rebuild check --flake .#kafka";
