@@ -9,6 +9,7 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    rofi-music.url = "github:FlutterKafka/Rofi-Music";
   };
   outputs = inputs: {
     darwinConfigurations = {
