@@ -6,13 +6,16 @@
       # Core Utils
       cd = "z";
       ls = "eza -la --group-directories-first";
-      gi = "git commit -S -a -m";
+      # Git aliases
+      g = "git";
+      gi = "git status";
+      go = "git commit -S -a -m";
       gp = "git push -u origin";
       # Editor
       mako = "hx ~/.config/nix/";
       # System
-      neko = "cd ~/.config/nix && sudo darwin-rebuild switch --flake .#kafka";
       kaze = "cd ~/.config/nix && sudo darwin-rebuild check --flake .#kafka";
+      neko = "cd ~/.config/nix && sudo darwin-rebuild switch --flake .#kafka";
       sora = "brew cleanup && sudo nix-collect-garbage && nix-collect-garbage -d";
       kage = "brew upgrade --greedy && cd ~/.config/nix/ && sudo nix flake update";
     };

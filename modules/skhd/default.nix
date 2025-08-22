@@ -30,13 +30,12 @@
       shift + cmd - 4 : yabai -m window --space 4
 
       rcmd - t : open -na 'Ghostty'
-      rcmd - a : open -na 'Mullvad Browser'
       rcmd - e : open -na 'iCloud Drive'
+      rcmd - a : open -na 'Mullvad Browser'
       rcmd - k : open -na 'KeePassXC'
       rcmd - l : open -na 'LibreOffice'
       rcmd - v : open -na 'VSCodium'
-      rcmd - u : open -na 'UTM'
-      rcmd - o : nix run github:FlutterKafka/Rofi-Music
+      rcmd - o : rofi-music
     '';
   };
 }

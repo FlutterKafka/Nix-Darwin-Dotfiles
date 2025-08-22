@@ -16,6 +16,7 @@
     };
     casks = [
       "anki"
+      "android-studio"
       "mullvad-browser"
       "mullvad-vpn@beta"
     ];
