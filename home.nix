@@ -13,10 +13,9 @@
     homeDirectory = "/Users/kafka";
     stateVersion = "23.11";
     packages = with pkgs; [ keepassxc libreoffice-bin
-      colima
-      docker
-      docker-compose
-      docker-credential-helpers
+      # docker
+      # docker-compose
+      # docker-credential-helpers
       inputs.rofi-music.packages.${pkgs.system}.default
     ];
   };
