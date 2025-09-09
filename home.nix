@@ -12,10 +12,9 @@
     username = "kafka";
     homeDirectory = "/Users/kafka";
     stateVersion = "23.11";
-    packages = with pkgs; [ keepassxc libreoffice-bin
-      # docker
-      # docker-compose
-      # docker-credential-helpers
+    packages = with pkgs; [
+      keepassxc
+      libreoffice-bin
       inputs.rofi-music.packages.${pkgs.system}.default
     ];
   };
