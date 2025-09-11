@@ -27,7 +27,7 @@
       set -Ux HOMEBREW_NO_ANALYTICS 1
       set -Ux HOMEBREW_NO_ENV_HINTS 1
       set -Ux HOMEBREW_NO_INSECURE_REDIRECT 1
-      fish_add_path ~/flutter/bin
+      fish_add_path ~/Documents/development/flutter/bin
       fish_add_path /opt/homebrew/bin
       fish_add_path /Users/kafka/.local/bin
       fish_add_path /opt/homebrew/opt/ruby/bin
