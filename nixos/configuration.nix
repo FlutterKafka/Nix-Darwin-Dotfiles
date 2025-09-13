@@ -19,7 +19,6 @@
       "android-studio"
       "mullvad-browser"
       "mullvad-vpn@beta"
-      "orbstack"
     ];
   };
 
@@ -35,7 +34,7 @@
     hostPlatform = lib.mkDefault "aarch64-darwin";
   };
   nix = {
-    package = pkgs.lix;
+    # package = pkgs.lix;
     optimise.automatic = true;
     settings.experimental-features = ["nix-command" "flakes"];
   };
