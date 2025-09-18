@@ -18,7 +18,6 @@
       "anki"
       "android-studio"
       "mullvad-browser"
-      "mullvad-vpn@beta"
     ];
   };
 
@@ -34,12 +33,18 @@
     hostPlatform = lib.mkDefault "aarch64-darwin";
   };
   nix = {
-    # package = pkgs.lix;
+    package = pkgs.lix;
     optimise.automatic = true;
     settings.experimental-features = ["nix-command" "flakes"];
   };
 
-  users.users.kafka.home = "/Users/kafka";
+  users.users.kafka = {
+    home = "/Users/kafka";
+    shell = pkgs.fish;
+  };
+
+  programs.fish.enable = true;
+
   security.pam.services.sudo_local.touchIdAuth = true;
 
   system = {

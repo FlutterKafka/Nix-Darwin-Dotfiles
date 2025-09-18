@@ -13,7 +13,6 @@
     homeDirectory = "/Users/kafka";
     stateVersion = "23.11";
     packages = with pkgs; [
-      container
       keepassxc
       libreoffice-bin
       inputs.rofi-music.packages.${pkgs.system}.default
