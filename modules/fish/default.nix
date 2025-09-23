@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [ eza fzf gnupg zoxide];
+  home.packages = with pkgs; [eza fzf gnupg zoxide];
   programs.fish = {
     enable = true;
     shellAliases = {
@@ -13,6 +13,7 @@
       gp = "git push -u origin";
       # Editor
       mako = "hx ~/.config/nix/";
+      code = '' osascript -e 'tell application "VSCodium" to open POSIX file "/Users/kafka/Documents/"' '';
       # System
       kaze = "cd ~/.config/nix && sudo darwin-rebuild check --flake .#kafka";
       neko = "cd ~/.config/nix && sudo darwin-rebuild switch --flake .#kafka";

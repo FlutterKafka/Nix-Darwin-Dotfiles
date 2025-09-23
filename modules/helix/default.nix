@@ -1,5 +1,5 @@
 {pkgs, lib, ...}: {
-  home.packages = with pkgs; [cocoapods ruby vscodium];
+  home.packages = with pkgs; [cocoapods ruby vscodium vscode];
   programs.helix = {
     enable = true;
     settings = {

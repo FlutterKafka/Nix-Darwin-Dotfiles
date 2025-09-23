@@ -2,6 +2,9 @@
   services.skhd = {
     enable = true;
     config = ''
+      shift + alt + cmd - r = 'tell application "System Events" to restart'
+      shift + alt + cmd - p = 'tell application "System Events" to shut down'
+
       cmd - p : yabai -m window --toggle float --toggle sticky --grid 4:4:1:1:2:2
       cmd - g : yabai -m window --toggle zoom-parent
       cmd - h : yabai -m window --toggle zoom-fullscreen
@@ -20,7 +23,7 @@
       shift + cmd - down  : yabai -m window --warp south
 
       rcmd - t : open -na 'Ghostty'
-      rcmd - e : open -na 'iCloud Drive'
+      rcmd - e : osascript -e 'tell application "Finder" to make new Finder window to home'
       rcmd - a : open -na 'Mullvad Browser'
       rcmd - k : open -na 'KeePassXC'
       rcmd - l : open -na 'LibreOffice'
