@@ -17,6 +17,8 @@
     casks = [
       "anki"
       "android-studio"
+      "keepassxc"
+      "libreoffice"
       "mullvad-browser"
     ];
   };

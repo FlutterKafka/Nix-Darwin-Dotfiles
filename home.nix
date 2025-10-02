@@ -1,4 +1,4 @@
-{inputs, pkgs, ...}: {
+{
   imports = [
     ./modules/fish
     ./modules/ghostty
@@ -12,11 +12,6 @@
     username = "kafka";
     homeDirectory = "/Users/kafka";
     stateVersion = "23.11";
-    packages = with pkgs; [
-      keepassxc
-      libreoffice-bin
-      inputs.rofi-music.packages.${pkgs.system}.default
-    ];
   };
 
   manual.manpages.enable = false;

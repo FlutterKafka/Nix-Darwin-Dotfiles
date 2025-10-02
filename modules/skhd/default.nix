@@ -2,9 +2,6 @@
   services.skhd = {
     enable = true;
     config = ''
-      shift + alt + cmd - r = 'tell application "System Events" to restart'
-      shift + alt + cmd - p = 'tell application "System Events" to shut down'
-
       cmd - p : yabai -m window --toggle float --toggle sticky --grid 4:4:1:1:2:2
       cmd - g : yabai -m window --toggle zoom-parent
       cmd - h : yabai -m window --toggle zoom-fullscreen
@@ -28,7 +25,6 @@
       rcmd - k : open -na 'KeePassXC'
       rcmd - l : open -na 'LibreOffice'
       rcmd - v : open -na 'VSCodium'
-      rcmd - o : rofi-music
     '';
   };
 }
