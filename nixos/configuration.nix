@@ -64,7 +64,6 @@
         AppleShowAllExtensions = true;
         AppleShowAllFiles = true;
         _FXSortFoldersFirst = true;
-        FXPreferredViewStyle = "clmv";
         ShowPathbar = true;
         ShowStatusBar = true;
       };
