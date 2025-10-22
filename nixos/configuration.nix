@@ -16,10 +16,12 @@
     };
     casks = [
       "anki"
-      "android-studio"
+      "crossover"
+      "discord"
       "keepassxc"
       "libreoffice"
       "mullvad-browser"
+      "prefs-editor"
     ];
   };
 

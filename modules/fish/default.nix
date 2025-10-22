@@ -6,13 +6,12 @@
       # Core Utils
       cd = "z";
       ls = "eza -la --group-directories-first";
-      # Git aliases
-      g = "git";
-      gi = "git status";
-      go = "git commit -S -a -m";
-      gp = "git push -u origin";
       # Editor
       edit = "hx ~/.config/nix/";
+      # Transmission
+      ts = "transmission-daemon";
+      td = "transmission-remote -l";
+      tf = "transmission-remote --exit";
       # System
       chalk = "cd ~/.config/nix && sudo darwin-rebuild check --flake .#kafka";
       swatch = "cd ~/.config/nix && sudo darwin-rebuild switch --flake .#kafka";
@@ -29,8 +28,6 @@
       set -Ux HOMEBREW_NO_INSECURE_REDIRECT 1
       fish_add_path /opt/homebrew/bin
       fish_add_path /Users/kafka/.local/bin
-      fish_add_path /opt/homebrew/opt/ruby/bin
-      fish_add_path ~/Documents/development/flutter/bin
     '';
   };
 }

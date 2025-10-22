@@ -1,9 +1,9 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [choose-gui terminal-notifier];
+  home.packages = with pkgs; [nyaa transmission_4 yt-dlp];
   programs.mpv = {
     enable = true;
     scripts = with pkgs; [
-      mpvScripts.modernx
+      mpvScripts.modernx-zydezu
       mpvScripts.evafast
       mpvScripts.thumbfast
     ];
@@ -52,10 +52,13 @@
         deband = true;
       };
       "protocol.https" = {
-        volume = 60;
-      };
-      "extension.m4a" = {
-        volume = 60;
+        speed = 2;
+        cache = true;
+        demuxer-readahead-secs = 30;
+        demuxer-max-bytes = "512MiB";
+        demuxer-max-back-bytes = "128MiB";
+        script-opts-append = "ytdl_hook-ytdl_path=yt-dlp";
+        ytdl-format = "bestvideo[height=?480][vcodec=vp9]+bestaudio/best";
       };
     };
     bindings = {
